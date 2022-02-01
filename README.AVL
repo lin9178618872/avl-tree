@@ -1,0 +1,55 @@
+You will use this exact Makefile for your Homework 3. If you need to change it, please consult with me first.
+
+You can compile everything by typing 
+
+make clean
+make all
+
+You can compile one program individually by just typing make <Program Name>, for example
+
+make query_tree
+
+By typing 
+
+make clean
+
+You delete all .o files and executables.
+
+--Note that file avl_tree_mod.h is not provided.
+
+//part 1
+//sequence_map.h: I have create big five and some other fuctions like A constructor SequenceMap(const string &a_rec_seq, const string &an_enz_acro),bool operator<(const SequenceMap &rhs) const,Overload the << operator in order to print out the enzyme_acronyms vector and void Merge(const SequenceMap &other_sequence)
+
+//part2.1
+//query_tree.cc: I have change it to read file and make it ouput the query_tree value
+//avl_tree.h: use my parser to create a search tree and then allow the user to query it using a recognition sequence.
+
+//part2.2
+test_tree.cc:follow the instruction to do 6 task:
+1. Parses the database and construct a search tree (this is the same as in Part 2.1).
+2. Prints the number of nodes in your tree n.
+3. Computes the average depth of your search tree, i.e. the internal path length divided by n.
+a. Prints the average depth.
+b. Prints the ratio of the average depth to log ! n. E.g., if average depth is 6.9 and log ! n =
+".$
+5.0, then you should print %.& = 1.38.
+4. Searches (find()) the tree for each string in the sequences.txt file and counts the total number
+of recursive calls for all executions of find().
+a. Prints the total number of successful queries (number of strings found).
+b. Prints the average number of recursion calls, i.e. #total number of recursion calls /
+number of queries.
+5. Removes every other sequence in sequences.txt from the tree and counts the total number of
+recursion calls for all executions of remove().
+a. Prints the total number successful removes.
+b. Prints the average number of recursion calls, i.e. #total number of recursion calls /
+number of remove calls.
+6. Redo steps 2 and 3:
+a. Prints number of nodes in your tree.
+b. Prints the average depth.
+c. Prints the ratio of the average depth to log ! n.
+
+avl_tree.h:finish the above task
+
+//Part 2.3:
+//test_tree_mod.cc:similar to 2.2 but output double rotation
+//avl_tree_mod.h: finish the 2.3 task are similar to the 2.2
